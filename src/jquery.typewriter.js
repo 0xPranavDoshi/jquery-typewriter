@@ -1,8 +1,4 @@
 (function ($) {
-  $.fn.greenify = function () {
-    this.css("color", "green");
-  };
-
   const timer = (ms) => new Promise((res) => setTimeout(res, ms));
 
   $.fn.typeWrite = function (speed, repeat) {

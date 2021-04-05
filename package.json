@@ -1,15 +1,24 @@
 {
-  "name": "typewriter",
+  "name": "jquery-typewriter",
   "version": "1.0.0",
   "description": "A customizable typing animation",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "dist/js/jquery.typewriter.js",
   "keywords": [
-    "npm",
-    "npm-typewriter"
+    "jquery-plugin",
+    "ecosystem:jquery",
+    "jquery",
+    "typewriter",
+    "animated typing"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Cybernetic77/typewriter-plugin"
+  },
+  "homepage": "https://github.com/Cybernetic77/typewriter-plugin#readme",
   "author": "Pranav Doshi",
-  "license": "ISC"
+  "bugs": "https://github.com/Cybernetic77/typewriter-plugin/issues",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
 }
