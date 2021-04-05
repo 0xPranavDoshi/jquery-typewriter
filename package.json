@@ -1,0 +1,15 @@
+{
+  "name": "typewriter",
+  "version": "1.0.0",
+  "description": "A customizable typing animation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "npm",
+    "npm-typewriter"
+  ],
+  "author": "Pranav Doshi",
+  "license": "ISC"
+}
