@@ -17,7 +17,7 @@
   "homepage": "https://github.com/Cybernetic77/typewriter-plugin#readme",
   "author": "Pranav Doshi",
   "bugs": "https://github.com/Cybernetic77/typewriter-plugin/issues",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "dependencies": {
     "jquery": "^3.6.0"
   }
