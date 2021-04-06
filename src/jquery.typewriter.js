@@ -15,6 +15,8 @@
       var inputText = $(this).text();
       letters = inputText.split("");
       $(this).text("");
+      $(this).css("margin", "0px");
+      $(this).css("white-space", "nowrap");
       var text = letters[0];
       while (settings.repeat == true) {
         for (let i = 0; i < letters.length; i++) {
@@ -35,12 +37,18 @@
       }
       for (let i = 0; i < letters.length; i++) {
         if (letters[i + 1] !== undefined) {
-          $(this).text(text);
-          text = text + letters[i + 1];
-          // console.log(text);
-          await timer(settings.speed);
+          if (settings.cursor == true) {
+            $(this).text(text);
+            $("#cursor").remove();
+            $(this).append("<span id='cursor'>︳</span>");
+            $("#cursor").css("animation", "blink 1s infinite");
+            text = text + letters[i + 1];
+            await timer(settings.speed);
+          }
         } else {
           $(this).text(text);
+          $("#cursor").remove();
+          $(this).append("<span id='cursor'>︳</span>");
           text = text + letters[i];
           await timer(settings.speed);
         }

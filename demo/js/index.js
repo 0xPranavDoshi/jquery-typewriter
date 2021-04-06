@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $("h1").typeWrite({
-    speed: 20,
-    repeat: true,
+    speed: 30,
+    repeat: false,
     cursor: true,
   });
 });
