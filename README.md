@@ -17,7 +17,7 @@ Add the jquery cdn in your html file along with the path to the js and css files
 
 <script src="node_modules/jquery-typewriter/dist/js/jquery.typewriter.min.js"></script>
 
-<script src="node_modules/jquery-typewriter/dist/css/cursor.css"></script>
+<link rel="stylesheet" href="node_modules/jquery-typewriter/dist/css/cursor.css"/>
 ```
 
 In your main js file, you can use the typewrite function on any element.

@@ -1,8 +1,8 @@
 $(document).ready(function () {
   $("h1").typeWrite({
-    speed: 30,
-    repeat: false,
+    speed: 70,
+    repeat: true,
     cursor: true,
-    color: "blue",
+    color: "red",
   });
 });
