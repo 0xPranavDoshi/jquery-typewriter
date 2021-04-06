@@ -7,6 +7,7 @@
         speed: 50,
         repeat: false,
         cursor: true,
+        color: "black",
       },
       options
     );
@@ -15,6 +16,7 @@
       var inputText = $(this).text();
       letters = inputText.split("");
       $(this).text("");
+      $(this).css("color", settings.color);
       $(this).css("margin", "0px");
       $(this).css("white-space", "nowrap");
       var text = letters[0];

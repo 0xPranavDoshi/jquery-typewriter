@@ -3,5 +3,6 @@ $(document).ready(function () {
     speed: 30,
     repeat: false,
     cursor: true,
+    color: "green",
   });
 });
