@@ -18,7 +18,6 @@
       $(this).text("");
       $(this).css("color", settings.color);
       $(this).css("margin", "0px");
-      $(this).css("white-space", "nowrap");
       var text = letters[0];
       while (settings.repeat == true) {
         for (let i = 0; i < letters.length; i++) {

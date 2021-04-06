@@ -10,19 +10,25 @@ Install the jquery-typewriter plugin with npm with the following command.
 npm i jquery-typewriter
 ```
 
-Add the path to the js plugin file and the jquery cdn in your html file.
+Add the jquery cdn in your html file along with the path to the js and css files.
 
-```json
+```html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <script src="node_modules/jquery-typewriter/dist/js/jquery.typewriter.min.js"></script>
+
+<script src="node_modules/jquery-typewriter/dist/css/cursor.css"></script>
 ```
 
-In your main js file, you can use the typewrtie function on any element.
+In your main js file, you can use the typewrite function on any element.
 
-The function requires 2 parameters:
-The first is the speed and the second is looping.
+The function requires an object with which you can costumize the typewriter.
 
 ```js
-$("h1").typeWrite(20, true);
+$("h1").typeWrite({
+  speed: 30,
+  repeat: false,
+  cursor: true,
+  color: "blue",
+});
 ```
