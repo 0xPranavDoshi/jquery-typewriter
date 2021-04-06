@@ -38,21 +38,31 @@
         text = letters[0];
       }
       for (let i = 0; i < letters.length; i++) {
-        if (letters[i + 1] !== undefined) {
-          if (settings.cursor == true) {
+        if (settings.cursor == true) {
+          if (letters[i + 1] !== undefined) {
             $(this).text(text);
             $("#cursor").remove();
             $(this).append("<span id='cursor'>︳</span>");
             $("#cursor").css("animation", "blink 1s infinite");
             text = text + letters[i + 1];
             await timer(settings.speed);
+          } else {
+            $(this).text(text);
+            $("#cursor").remove();
+            $(this).append("<span id='cursor'>︳</span>");
+            text = text + letters[i];
+            await timer(settings.speed);
           }
         } else {
-          $(this).text(text);
-          $("#cursor").remove();
-          $(this).append("<span id='cursor'>︳</span>");
-          text = text + letters[i];
-          await timer(settings.speed);
+          if (letters[i + 1] !== undefined) {
+            $(this).text(text);
+            text = text + letters[i + 1];
+            await timer(settings.speed);
+          } else {
+            $(this).text(text);
+            text = text + letters[i];
+            await timer(settings.speed);
+          }
         }
       }
     });
