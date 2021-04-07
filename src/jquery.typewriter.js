@@ -8,6 +8,7 @@
         repeat: false,
         cursor: true,
         color: "black",
+        interval: 1000,
       },
       options
     );
@@ -34,7 +35,7 @@
               $("#cursor").remove();
               $(this).append("<span id='cursor'>︳</span>");
               text = text + letters[i];
-              await timer(settings.speed);
+              await timer(settings.interval);
             }
           } else {
             if (letters[i + 1] !== undefined) {
@@ -44,7 +45,7 @@
             } else {
               $(this).text(text);
               text = text + letters[i];
-              await timer(settings.speed);
+              await timer(settings.interval);
             }
           }
         }

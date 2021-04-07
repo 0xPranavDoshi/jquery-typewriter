@@ -1,8 +1,9 @@
 $(document).ready(function () {
   $("h1").typeWrite({
-    speed: 70,
+    speed: 30,
     repeat: true,
     cursor: true,
-    color: "red",
+    color: "blue",
+    interval: 1000,
   });
 });
