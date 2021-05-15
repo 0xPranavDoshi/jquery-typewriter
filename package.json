@@ -1,6 +1,6 @@
 {
   "name": "jquery-typewriter",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "A customizable typing animation",
   "main": "dist/js/jquery.typewriter.js",
   "keywords": [
@@ -12,10 +12,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/ZaphodElevated/typewriter-plugin"
+    "url": "https://github.com/ZaphodElevated/jquery-typewriter"
   },
-  "homepage": "https://github.com/ZaphodElevated/typewriter-plugin#readme",
+  "homepage": "https://github.com/ZaphodElevated/jquery-typewriter#readme",
   "author": "Pranav Doshi",
-  "bugs": "https://github.com/ZaphodElevated/typewriter-plugin/issues",
+  "bugs": "https://github.com/ZaphodElevated/jquery-typewriter/issues",
   "license": "Apache-2.0"
 }
