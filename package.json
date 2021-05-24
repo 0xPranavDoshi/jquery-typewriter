@@ -1,6 +1,6 @@
 {
   "name": "jquery-typewriter",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "description": "A customizable typing animation",
   "main": "dist/js/jquery.typewriter.js",
   "keywords": [

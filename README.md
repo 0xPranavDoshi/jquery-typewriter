@@ -6,10 +6,11 @@ A customizable typing animation with jquery.
 
 # Usage
 
-Install the jquery-typewriter plugin with npm with the following command.
+Install the jquery-typewriter plugin with npm or yarn with either of the following commands.
 
 ```
 npm i jquery-typewriter
+yarn add jquery-typewriter
 ```
 
 Add the jquery cdn in your html file along with the path to the js and css files.
