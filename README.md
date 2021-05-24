@@ -10,6 +10,8 @@ Install the jquery-typewriter plugin with npm or yarn with either of the followi
 
 ```
 npm i jquery-typewriter
+```
+```
 yarn add jquery-typewriter
 ```
 
